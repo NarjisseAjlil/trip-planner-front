@@ -1,33 +1,85 @@
-#app {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  font-weight: normal;
+body {
+  background-color: #2f2e2b;
+}
+/* main title */
+.title {
+  text-align: center;
+  color: white;
+  font-family: Lora;
 }
 
-a,
-.green {
-  text-decoration: none;
-  color: hsla(160, 100%, 37%, 1);
-  transition: 0.4s;
-  padding: 3px;
+/* subtitle */
+.subtitle {
+  color: #958f7e;
+  text-align: center;
+  font-family: Lora;
 }
 
-@media (hover: hover) {
-  a:hover {
-    background-color: hsla(160, 100%, 37%, 0.2);
-  }
+/* input container */
+.input-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-@media (min-width: 1024px) {
-  body {
-    display: flex;
-    place-items: center;
-  }
+/* input field */
+.input {
+  padding: 20%;
+  border: 1px solid #958f7e;
+  background-color: #242321;
+  color: white;
+  border-radius: 10px;
+}
 
-  #app {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    padding: 0 2rem;
-  }
+/* button container */
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 5%;
+}
+
+/* start button */
+.start-button {
+  color: white;
+  background-color: #6d695e;
+  padding: 10px 30px;
+  border-radius: 10px;
+  border: none;
+  font-size: 12px;
+}
+
+/* example button */
+.example-button {
+  color: white;
+  margin-left: 20px;
+  background-color: #2f2e2b;
+  border: 1px solid;
+  padding: 10px;
+  border-radius: 10px;
+  border-color: #6d695e;
+  font-size: 12px;
+}
+
+/* last trips history  */
+.last-trips {
+  color: #958f7e;
+  font-family: Inter;
+}
+
+/* trips container */
+.trips {
+  display: flex;
+  flex-direction: column;
+}
+
+/* individual trip */
+.trip {
+  background-color: #262522;
+  color: white;
+  padding: 15px;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 14px;
+  margin-bottom: 10px;
+  width: 90%;
 }
