@@ -1,3 +1,5 @@
+<!-- src/components/Map.vue -->
+
 <template>
   <div id="map"></div>
 </template>
@@ -12,7 +14,7 @@ const key = "MAR8E5drMBTYVXle4Ohm";
 
 onMounted(() => {
   const map = L.map("map", {
-    center: L.latLng(0, 0), // Centre initial
+    center: L.latLng(0, 0),
     zoom: 5,
   });
 
@@ -32,7 +34,7 @@ onMounted(() => {
     const locations = [
       { lat: 35.6895, lng: 139.6917, name: "Tokyo" },
       { lat: 34.6937, lng: 135.5023, name: "Kyoto" },
-    ]; // Remplacez ceci par votre logique pour obtenir les emplacements de l'IA
+    ];
     const bounds = L.latLngBounds();
     locations.forEach((location) => {
       const marker = L.marker([location.lat, location.lng]).addTo(map);
@@ -42,7 +44,7 @@ onMounted(() => {
     map.fitBounds(bounds);
   };
 
-  updateMap(); // Appelez la fonction une fois pour afficher les emplacements initiaux
+  updateMap();
 });
 </script>
 
