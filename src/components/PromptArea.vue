@@ -29,7 +29,6 @@ const sendSubmit = async (event) => {
 </script>
 
 <template>
-  <i class="bi bi-compass"></i>
   <h1 class="title">
     Planificateur <br />
     de voyages
