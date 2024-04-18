@@ -1,3 +1,5 @@
+<!-- src/views/HomeView.vue -->
+
 <script setup>
 import PromptArea from "@/components/PromptArea.vue";
 import ListHistory from "@/components/ListHistory.vue";
@@ -5,5 +7,5 @@ import ListHistory from "@/components/ListHistory.vue";
 
 <template>
   <PromptArea />
-  <ListHistory></ListHistory>
+  <ListHistory />
 </template>
