@@ -44,22 +44,22 @@ body {
 .start-button {
   color: white;
   background-color: #6d695e;
-  padding: 10px 30px;
+  padding: 1rem 1rem;
   border-radius: 10px;
   border: none;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 /* example button */
 .example-button {
   color: white;
-  margin-left: 20px;
+  margin-left: 1rem;
   background-color: #2f2e2b;
   border: 1px solid;
-  padding: 10px;
+  padding: 1rem;
   border-radius: 10px;
   border-color: #6d695e;
-  font-size: 12px;
+  font-size: 1rem;
 }
 
 /* last trips history  */
@@ -74,21 +74,25 @@ body {
   flex-direction: column;
 }
 
-/* individual trip */
+/* list history trip */
 .trip {
   background-color: #262522;
   color: white;
-  padding: 15px;
+  padding: 1rem;
   border-radius: 10px;
   font-family: Inter;
-  font-size: 14px;
-  margin-bottom: 10px;
+  font-size: 1rem;
+  margin-bottom: 1rem;
   width: 90%;
 }
 
-#map {
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  width: 100%;
+/* individual trip */
+.individual-trip {
+  color: white;
+  padding: 1rem;
+  border-radius: 10px;
+  font-family: Inter;
+  font-size: 1rem;
+  margin-bottom: 1rem;
+  width: 90%;
 }
