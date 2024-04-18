@@ -1,9 +1,11 @@
+<!-- src/components/TripsView.vue -->
+
 <script setup>
 import Map from "@/components/Map.vue";
 import Trip from "@/components/Trip.vue";
 </script>
 
 <template>
-  <Map></Map>
-  <Trip></Trip>
+  <Map />
+  <Trip />
 </template>
