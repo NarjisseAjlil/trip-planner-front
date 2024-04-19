@@ -16,7 +16,7 @@ h2 {
   font-family: Lora;
 }
 
-/* subtitle */
+/* HomeView subtitle */
 .subtitle {
   color: #958f7e;
   text-align: center;
@@ -68,6 +68,9 @@ h2 {
   font-size: 1rem;
 }
 
+.history-list-trips {
+  padding: 3%;
+}
 /* last trips history  */
 .last-trips {
   color: #958f7e;
@@ -79,9 +82,18 @@ h2 {
   display: flex;
   flex-direction: column;
 }
+.compass {
+  display: flex;
+  justify-content: center;
+  margin-top: 10%;
+}
 
+.arrow {
+  display: flex;
+  justify-content: end;
+}
 /* list history trip */
-.trip {
+.list-history-trip {
   background-color: #262522;
   color: white;
   padding: 1rem;
@@ -90,10 +102,31 @@ h2 {
   font-size: 1rem;
   margin-bottom: 1rem;
   width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-/* individual trip */
+/* IndividualTrip.vue individual trip */
+
 .individual-trip {
+  margin: 5%;
+}
+
+.individual-trip-container {
+  display: flex;
+  align-items: center;
+}
+
+.individual-trip-prompt {
+  margin-right: 3rem;
+  font-size: 1.5rem;
+  color: white;
+  font-family: Lora;
+  font-weight: bold;
+}
+
+.individual-trip-description {
   color: white;
   padding: 1rem;
   border-radius: 10px;
@@ -103,22 +136,14 @@ h2 {
   width: 90%;
 }
 
-.trip-prompt {
-  margin-right: 3rem;
-  font-size: 1.5rem;
-  color: white;
-  font-family: Lora;
-  font-weight: bold;
-}
-
 .location-name {
   font-family: Lora;
   font-weight: bold;
 }
 
-.trip-container {
-  display: flex;
-  align-items: center;
+.last-trip {
+  margin: 5%;
+  padding-top: 5%;
 }
 
 /* loader */
@@ -129,7 +154,17 @@ h2 {
   --text-shadow-blur: 3px;
   --animation-duration: 2s;
   --size: 1;
-  margin-top: 20%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  z-index: 9999;
+  background-color: #242321;
 }
 
 .abstergo-loader * {
