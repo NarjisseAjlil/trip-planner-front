@@ -3,7 +3,6 @@
 <script setup>
 import { ref, onMounted } from "vue";
 import { useRouter } from "vue-router";
-import { ChevronRight } from "lucide-vue-next";
 
 const data = ref([]);
 const router = useRouter();
@@ -20,13 +19,16 @@ const goToTrip = (id) => {
 </script>
 
 <template>
-  <p class="last-trips" style="margin: 5%; padding-top: 5%">
-    Derniers itinéraires
-  </p>
-  <div class="trips">
-    <p class="trip" v-for="item in data" @click="goToTrip(item.id)">
+  <div class="history-list-trips">
+    <p class="last-trips">Derniers itinéraires</p>
+
+    <p
+      class="list-history-trip"
+      v-for="item in data"
+      @click="goToTrip(item.id)"
+    >
       {{ item.prompt }}
-      <ChevronRight />
+      <img src="../assets/arrow.png" alt="" />
     </p>
   </div>
 </template>
