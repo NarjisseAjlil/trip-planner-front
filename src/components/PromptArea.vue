@@ -1,3 +1,5 @@
+<!-- src/components/PromptArea.vue -->
+
 <script setup>
 import { ref } from "vue";
 import { useRouter } from "vue-router";
@@ -6,6 +8,8 @@ const data = ref([]);
 const prompt = ref();
 const router = useRouter();
 const isLoading = ref(false);
+
+// send data
 
 async function sendData() {
   const response = await fetch("http://localhost:3000/v1/trips", {
@@ -20,6 +24,8 @@ async function sendData() {
   return responseData.id;
 }
 
+// send submit
+
 const sendSubmit = async (event) => {
   isLoading.value = true;
   const id = await sendData();
@@ -29,6 +35,9 @@ const sendSubmit = async (event) => {
 </script>
 
 <template>
+  <div class="compass">
+    <img src="../assets/compass.png" alt="" />
+  </div>
   <h1 class="title">
     Planificateur <br />
     de voyages
@@ -36,7 +45,7 @@ const sendSubmit = async (event) => {
   <p class="subtitle">généré par IA</p>
   <form @submit.prevent="sendSubmit" v-if="!isLoading">
     <div class="input-container">
-      <input type="text" class="input" v-model="prompt" />
+      <textarea type="text" class="input" v-model="prompt" />
     </div>
 
     <div class="button-container">
